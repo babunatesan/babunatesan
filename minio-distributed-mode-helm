@@ -1,0 +1,6 @@
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm install minio-cluster \
+  --set mode=distributed \
+  --set accessKey.password=U1cp@y3LuqK9 \
+  --set secretKey.password=CdtqCI0*Mbw8 \
+    bitnami/minio -n minio
